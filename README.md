@@ -24,3 +24,12 @@ Essa colaboração garante uma resposta simples, clara e divertida, pronta para 
     CrewAI: Orquestração dos agentes.
     Streamlit: Interface interativa para facilitar o uso.
     Wikipedia API: Fonte confiável de informações.
+
+## 🌟 Demonstração
+
+Digite sua pergunta, como:
+
+    "O que são estrelas?"
+    "Como funcionam os vulcões?"
+
+E receba uma resposta simples, curta e divertida como se um professor amigável estivesse explicando! 🎓✨
