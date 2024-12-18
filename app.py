@@ -77,15 +77,11 @@ st.header("Wikipedia Divertida")
 if "resposta" not in st.session_state:
     st.session_state.resposta = ""
 
-if "nova_pergunta" not in st.session_state:
-    st.session_state.nova_pergunta = False
-
 # Entrada da pergunta
-if st.session_state.nova_pergunta or (q := st.text_input("Digite sua pergunta")):
+if q := st.text_input("Digite sua pergunta"):
     if st.button("Buscar Resposta"):
         resposta = executar(q)
         st.session_state.resposta = resposta
-        st.session_state.nova_pergunta = False
 
 # Exibe a resposta
 if st.session_state.resposta:
