@@ -1,8 +1,9 @@
 # ai_agents_wikipedia_divertida
 
-🧠📚 Wikipedia Divertida com IA Multiagentes
+🧠📚 Wikipedia Divertida com Multiagentes de IA usando CrewAI
 
 Transforme qualquer pergunta em respostas simples e amigáveis para crianças com IA colaborativa! 🚀
+
 ✨ Sobre o Projeto
 
 Este projeto usa a CrewAI para criar um sistema multiagente que transforma consultas complexas em textos simples, divertidos e educativos, como se fossem explicados para uma criança de 10 anos.
