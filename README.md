@@ -6,7 +6,7 @@ Transforme qualquer pergunta em respostas simples e amigáveis para crianças co
 
 ✨ Sobre o Projeto
 
-Este projeto usa a CrewAI para criar um sistema multiagente que transforma consultas complexas em textos simples, divertidos e educativos, como se fossem explicados para uma criança de 10 anos.
+Este projeto usa a CrewAI para criar um sistema multiagente que transforma consultas complexas em textos simples, divertidos e educativos, como se fossem explicados para uma criança de 08 anos.
 Ao usar agentes especializados (pesquisador, escritor e editor), a aplicação consulta a Wikipedia, reescreve o conteúdo em linguagem simplificada e garante que a resposta esteja perfeita! Tudo isso acontece com a colaboração inteligente e automatizada entre os agentes.
 🛠️ Como Funciona?
 
