@@ -1,5 +1,3 @@
-# ai_agents_wikipedia_divertida
-
 🧠📚 Wikipedia Divertida com Multiagentes de IA usando CrewAI
 
 Transforme qualquer pergunta em respostas simples e amigáveis para crianças com IA colaborativa! 🚀
