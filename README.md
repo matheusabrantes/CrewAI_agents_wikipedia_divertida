@@ -9,7 +9,7 @@ Ao usar agentes especializados (pesquisador, escritor e editor), a aplicação c
 
 ## 🖼️ Exemplo da Aplicação
 
-![Interface da aplicação](assets/screenshot.png)
+![Interface da aplicação](screenshot.png)
 
 ## 🛠️ Como Funciona?
 
