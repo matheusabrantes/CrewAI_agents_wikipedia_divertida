@@ -1,7 +1,7 @@
-import duckdb
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3') 
 
-# Configuração do banco DuckDB
-connection = duckdb.connect(database=':memory:')  # Ou 'meu_banco.duckdb' para persistência
 
 from crewai import Agent, Task, Crew
 import os
