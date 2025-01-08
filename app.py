@@ -1,6 +1,13 @@
+import duckdb
+
+# Configuração do banco DuckDB
+connection = duckdb.connect(database=':memory:')  # Ou 'meu_banco.duckdb' para persistência
+
+
 from crewai import Agent, Task, Crew
 import os
 from dotenv import load_dotenv
+
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
