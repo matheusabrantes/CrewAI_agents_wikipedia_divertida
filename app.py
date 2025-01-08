@@ -6,15 +6,15 @@ from crewai import Agent, Task, Crew
 import os
 from dotenv import load_dotenv
 
+# Importando ferramentas
+from crewai_tools import tool
+import wikipedia
+
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 # Chave da API OpenAI
 os.environ["OPENAI_API_KEY"] = api_key
 llm = "gpt-4o-mini"
-
-# Importando ferramentas
-from crewai_tools import tool
-import wikipedia
 
 @tool("pesquisa_wikipedia")
 def pesquisa_wikipedia(q: str) -> str:
