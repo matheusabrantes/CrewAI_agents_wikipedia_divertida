@@ -1,13 +1,13 @@
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3') 
+# __import__('pysqlite3')
+# import sys
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3') 
 
 from crewai import Agent, Task, Crew
 import os
 from dotenv import load_dotenv
 
 # Importando ferramentas
-# from crewai_tools import tool
+from crewai_tools import tool
 import wikipedia
 
 load_dotenv()
