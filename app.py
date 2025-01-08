@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 
 # Importando ferramentas
-from crewai_tools import tool
+# from crewai_tools import tool
 import wikipedia
 
 load_dotenv()
