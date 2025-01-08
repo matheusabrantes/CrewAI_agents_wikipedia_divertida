@@ -2,11 +2,9 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3') 
 
-
 from crewai import Agent, Task, Crew
 import os
 from dotenv import load_dotenv
-
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
