@@ -2,6 +2,7 @@
 # import sys
 # sys.modules['sqlite3'] = sys.modules.pop('pysqlite3') 
 
+# Importando bibliotecas
 from crewai import Agent, Task, Crew
 import os
 from dotenv import load_dotenv
@@ -10,12 +11,14 @@ from dotenv import load_dotenv
 from crewai_tools import tool
 import wikipedia
 
+# Carrega a chave da API OpenAI e o modelo utilizado
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 # Chave da API OpenAI
 os.environ["OPENAI_API_KEY"] = api_key
 llm = "gpt-4o-mini"
 
+# Função para pesquisar na Wikipedia
 @tool("pesquisa_wikipedia")
 def pesquisa_wikipedia(q: str) -> str:
     "Pesquise uma consulta na Wikipedia e retorne um resumo"
@@ -37,8 +40,8 @@ escritor_agente = Agent(
     )
 editor_agente = Agent(
         role="Editor",
-        goal="Você garante que o texto fornecido está gramaticalmente correto em pt-br e com o tamanho apropriado",
-        backstory="Você é um escritor e editor experiente",
+        goal="Você garante que o texto fornecido está gramaticalmente correto em pt-br, com o tamanho apropriado e numa linguagem que uma criança entenda",
+        backstory="Você é um editor experiente que trabalha com textos para crianças",
         llm=llm
     )
 
